@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff8fab" />
+  <meta name="description" content="A little romantic surprise." />
+  <title>A tiny question for you ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <main class="app-shell">
+    <section id="landing" class="screen landing-screen active" aria-labelledby="hello-title">
+      <div class="glass-card greeting-card">
+        <p class="eyebrow">a tiny surprise, just for you</p>
+        <h1 id="hello-title">Hii <span class="wobble">❤️</span></h1>
+        <p class="nicknames">Kothi, Bangaram, Pandhi, Cutie, Bujji 💕</p>
+        <p class="subtitle">I have a very important question...</p>
+        <button id="enter-btn" class="button button-primary" type="button">Enter <span>✨</span></button>
+      </div>
+    </section>
+
+    <section id="loading" class="screen loading-screen" aria-live="polite" aria-label="Loading your surprise">
+      <div class="loading-heart">♥</div>
+      <p>Preparing something sweet...</p>
+    </section>
+
+    <section id="question" class="screen question-screen" aria-labelledby="question-title">
+      <div class="glass-card question-card">
+        <p id="cute-message" class="cute-message" aria-live="polite">I have a feeling I know the answer 🤭</p>
+        <div class="question-orbit" aria-hidden="true">♡</div>
+        <h2 id="question-title">Do you love me? <span>❤️</span></h2>
+        <p class="subtitle">Choose wisely, pretty please.</p>
+        <div id="button-zone" class="button-zone">
+          <button id="yes-btn" class="button button-yes" type="button">❤️ Yes</button>
+          <button id="no-btn" class="button button-no" type="button" aria-label="No (this button is very shy)">💔 No</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="success" class="screen success-screen" aria-live="polite" aria-labelledby="success-title">
+      <div class="glass-card success-card">
+        <div class="teddy" role="img" aria-label="A cute teddy bear holding a heart">
+          <span class="ear ear-left"></span><span class="ear ear-right"></span>
+          <span class="bear-face"><i class="eye left"></i><i class="eye right"></i><i class="snout"></i></span>
+          <span class="bear-heart">♥</span>
+        </div>
+        <h2 id="success-title">I knew you actually love me <span>❤️🥹</span></h2>
+        <p class="love-line">Love you sooo much 😘😘😘</p>
+        <p class="kisses" aria-label="five kisses">😘😘😘😘😘</p>
+        <div id="video-frame" class="video-frame">
+          <video id="bubu-video" class="bubu-video" muted loop playsinline controls preload="metadata" aria-label="A cute celebration video">
+            <source src="BUBU.mp4" type="video/mp4" />
+            Your browser does not support this celebration video.
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="particle-layer" class="particle-layer" aria-hidden="true"></div>
+  <div id="confetti-layer" class="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
